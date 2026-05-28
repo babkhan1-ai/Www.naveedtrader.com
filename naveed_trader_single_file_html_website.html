@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naveed Trader | Construction Machinery Rental UAE</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: white;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h2 {
+      font-size: 30px;
+      color: #93c5fd;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #dbeafe;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-whatsapp {
+      background: #22c55e;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #16a34a;
+    }
+
+    .btn-call {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-call:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #60a5fa;
+    }
+
+    .section-text {
+      text-align: center;
+      color: #cbd5e1;
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+
+    .about {
+      background: #0f172a;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .about p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .features p {
+      margin-bottom: 10px;
+    }
+
+    .services-grid,
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #0f172a;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .card-content p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .contact {
+      background: #172554;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .contact-box {
+      background: rgba(15, 23, 42, 0.8);
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .contact-box h3 {
+      margin-bottom: 20px;
+      color: #93c5fd;
+      font-size: 28px;
+    }
+
+    .contact-box p {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #e2e8f0;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 20px;
+    }
+
+    footer {
+      background: black;
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 768px) {
+      .hero-content h1 {
+        font-size: 40px;
+      }
+
+      .hero-content h2 {
+        font-size: 24px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Naveed Trader</h1>
+
+      <h2>Heavy Construction Machinery, Manlift & Boom Lift Rental Services in UAE</h2>
+
+      <p>
+        Professional Manlift, Boom Lift & Construction Machinery Rental Services in UAE
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/971588337131?text=Hello%20Naveed%20Trader%2C%20I%20need%20construction%20machinery%20rental%20service"
+           target="_blank">
+          WhatsApp Now
+        </a>
+
+        <a class="btn btn-call" href="tel:+971588337131">
+          Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title">Trusted Construction Equipment Rental Company</h2>
+
+        <p>
+          Naveed Trader provides reliable and affordable manlift, boom lift,
+          aerial work platform, and construction machinery rental services across UAE.
+        </p>
+
+        <p>
+          We supply quality JLG, Skyjack, forklifts, scissor lifts, generators,
+          and heavy construction equipment for industrial and site projects.
+        </p>
+
+        <div class="features">
+          <p>✔ Modern & Well-Maintained Equipment</p>
+          <p>✔ Fast Delivery Across UAE</p>
+          <p>✔ Competitive Rental Prices</p>
+          <p>✔ Experienced Technical Support</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Boom Lift" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-text">High Quality Construction & Aerial Equipment Rentals</p>
+
+      <div class="services-grid">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Construction Machinery" />
+          <div class="card-content">
+            <h3>Construction Machinery Rental</h3>
+            <p>Reliable machinery and equipment for construction and industrial projects.</p>
+            <a class="btn btn-call" href="https://wa.me/971588337131" target="_blank">Get Quote</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="JLG Manlift" />
+          <div class="card-content">
+            <h3>JLG Manlift Rental</h3>
+            <p>Professional JLG manlifts and boom lifts available for rental across UAE.</p>
+            <a class="btn btn-call" href="https://wa.me/971588337131" target="_blank">Get Quote</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop" alt="Skyjack Equipment" />
+          <div class="card-content">
+            <h3>Skyjack Equipment Rental</h3>
+            <p>High-quality Skyjack lifts and aerial platforms for warehouse and site work.</p>
+            <a class="btn btn-call" href="https://wa.me/971588337131" target="_blank">Get Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" style="background:#0f172a;">
+    <div class="container">
+      <h2 class="section-title">JLG & Skyjack Equipment Fleet</h2>
+      <p class="section-text">
+        Different Types of Manlifts, Boom Lifts, Scissor Lifts & Construction Machinery
+      </p>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Equipment 1">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Equipment 2">
+        <img src="https://images.unsplash.com/photo-1504917595217-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Equipment 3">
+        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop" alt="Equipment 4">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Equipment 5">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="Equipment 6">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Naveed Trader</h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-box">
+          <h3>Contact Information</h3>
+
+          <p>📞 00971 58 833 7131</p>
+          <p>📧 babkhan1@yahoo.com</p>
+          <p>📍 Naveed Trader, Big Bazar Roundabout, Sajja Industrial Area, Sharjah, UAE</p>
+        </div>
+
+        <div class="contact-box">
+          <h3>Quick Contact</h3>
+
+          <div class="buttons" style="justify-content:flex-start;">
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/971588337131?text=Hello%20Naveed%20Trader%2C%20I%20need%20construction%20machinery%20rental%20service"
+               target="_blank">
+              Chat on WhatsApp
+            </a>
+
+            <a class="btn btn-call" href="tel:+971588337131">
+              Call for Booking
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Our Location</h2>
+
+      <iframe
+        src="https://maps.google.com/maps?q=Naveed%20Trader%20Big%20Bazar%20Roundabout%20Sajja%20Sharjah&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        height="450"
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Naveed Trader | Construction Machinery, Manlift & Boom Lift Rental UAE
+    </p>
+  </footer>
+
+  <script>
+    console.log('Naveed Trader Website Loaded Successfully');
+  </script>
+
+</body>
+</html>
